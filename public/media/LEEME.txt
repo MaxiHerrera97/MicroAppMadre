@@ -1,0 +1,9 @@
+Pon aquí las fotos y la canción:
+
+  cancion.mp3          -> la canción (se reproduce en loop)
+  portada-1.jpg ...    -> fotos de la portada (3)
+  epoca-1.jpg ...      -> fotos de la línea de tiempo
+  og.jpg               -> imagen 1200x630 para la vista previa en WhatsApp
+
+Luego actualiza las rutas en src/config.js, por ejemplo: '/media/portada-1.jpg'
+Consejo: comprime las fotos (máx. ~1200 px de lado) para que cargue rápido en el celular.
