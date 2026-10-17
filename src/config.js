@@ -4,12 +4,8 @@
 //
 //  Fotos y canción: ponlas en  public/media/  y referencialas así:
 //    "/media/portada-1.jpg"   "/media/cancion.mp3"
-//  (Mientras tanto se usan fotos de ejemplo de picsum.photos)
+//  Las fotos de portada se ven mejor verticales (4:5) y las de la línea de tiempo horizontales (4:3)
 // ============================================================
-
-// Foto de ejemplo. Reemplaza cada foto(...) por tu ruta, ej: '/media/portada-1.jpg'
-const foto = (semilla, ancho = 600, alto = 600) =>
-  `https://picsum.photos/seed/${semilla}/${ancho}/${alto}`
 
 export const config = {
   // --- Quién recibe y quién regala ---
@@ -21,14 +17,14 @@ export const config = {
   toquesRiego: 8,
   textoInicio: 'Riega la flor para descubrir tu sorpresa 🌷',
 
-  // ⚠️ REEMPLAZAR: copia tu canción a public/media/cancion.mp3 (o cambia esta ruta)
+  // Canción en public/media/cancion.mp3 (se reproduce en loop)
   cancion: '/media/cancion.mp3',
 
   // --- Portada: 3 fotos (se precargan mientras se riega la flor) ---
   fotosPortada: [
-    foto('mama-portada-1', 600, 750),
-    foto('mama-portada-2', 600, 750),
-    foto('mama-portada-3', 600, 750),
+    '/media/portada-1.jpg',
+    '/media/portada-2.jpg',
+    '/media/portada-3.jpg',
   ],
 
   // --- "Gracias por…": 6 motivos (cortos, se leen mejor) ---
@@ -43,11 +39,11 @@ export const config = {
 
   // --- Línea de tiempo: 4 a 6 momentos ---
   lineaDeTiempo: [
-    { foto: foto('mama-epoca-1', 800, 600), anio: '1992', texto: 'Tus primeros pasos como mamá. Ahí empezó todo.' },
-    { foto: foto('mama-epoca-2', 800, 600), anio: '1998', texto: 'Cumpleaños con torta casera y globos por toda la casa.' },
-    { foto: foto('mama-epoca-3', 800, 600), anio: '2005', texto: 'Siempre en primera fila, en cada acto y cada partido.' },
-    { foto: foto('mama-epoca-4', 800, 600), anio: '2015', texto: 'Nos viste crecer y nunca dejaste de cuidarnos.' },
-    { foto: foto('mama-epoca-5', 800, 600), anio: '2025', texto: 'Hoy, más unidos que nunca. Gracias por todo.' },
+    { foto: '/media/epoca-1.jpg', anio: '1992', texto: 'Tus primeros pasos como mamá. Ahí empezó todo.' },
+    { foto: '/media/epoca-2.jpg', anio: '1998', texto: 'Cumpleaños con torta casera y globos por toda la casa.' },
+    { foto: '/media/epoca-3.jpg', anio: '2005', texto: 'Siempre en primera fila, en cada acto y cada partido.' },
+    { foto: '/media/epoca-4.jpg', anio: '2015', texto: 'Nos viste crecer y nunca dejaste de cuidarnos.' },
+    { foto: '/media/epoca-5.jpg', anio: '2025', texto: 'Hoy, más unidos que nunca. Gracias por todo.' },
   ],
 
   // --- Frasco de recuerdos: 8 a 12 frases cortas ---

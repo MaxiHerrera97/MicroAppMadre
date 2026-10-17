@@ -27,4 +27,7 @@ function datosEnHtml() {
 
 export default defineConfig({
   plugins: [react(), tailwindcss(), datosEnHtml()],
+  // Expone el servidor en la red local para poder abrirlo desde el celular
+  server: { host: true, port: 5173 },
+  preview: { host: true, port: 4173 },
 })
